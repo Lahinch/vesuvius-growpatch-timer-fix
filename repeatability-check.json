@@ -1,0 +1,18 @@
+{
+  "baseline-deterministic vs baseline-repeat": {
+    "identical_geometry": false,
+    "valid_mask_equal": true,
+    "valid_vertices": 675,
+    "mean_distance_vox": 0.7358951914411419,
+    "max_distance_vox": 4.392139443546319,
+    "generations_equal": true
+  },
+  "baseline-deterministic vs patched-deterministic": {
+    "identical_geometry": false,
+    "valid_mask_equal": true,
+    "valid_vertices": 675,
+    "mean_distance_vox": 0.7192744591650451,
+    "max_distance_vox": 2.7153184196629705,
+    "generations_equal": true
+  }
+}

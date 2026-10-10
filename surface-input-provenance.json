@@ -1,0 +1,66 @@
+{
+  "sample": "PHerc0125",
+  "scan_volume": "20250821151825",
+  "voxel_um": 9.362,
+  "global_origin_xyz": [
+    3712,
+    2816,
+    10016
+  ],
+  "ct_selection": {
+    "kind": "ome-zarr",
+    "level": 0,
+    "url": "https://vesuvius-challenge-open-data.s3.us-east-1.amazonaws.com/PHerc0125/volumes/20250821151825-9.362um-1.2m-113keV-masked.zarr/0/",
+    "bounds_zyx": [
+      [
+        10400,
+        10401
+      ],
+      [
+        2816,
+        3584
+      ],
+      [
+        3712,
+        4480
+      ]
+    ],
+    "chunks": 36,
+    "absent_chunks_using_zarr_fill": [],
+    "compressed_bytes": 75497472,
+    "shape": [
+      1,
+      768,
+      768
+    ],
+    "array_sha256": "af36f8e5122af0472d459ccc164e8c81b9b442e1aa2ae9fc906abc8cf1f022ac"
+  },
+  "surface_crop": {
+    "kind": "surface-prediction-zarr",
+    "level": 0,
+    "url": "https://vesuvius-challenge-open-data.s3.us-east-1.amazonaws.com/PHerc0125/representations/predictions/surfaces/20250821151825-surface-20260413222639-surface-m7-L0-th0.2.zarr/0/",
+    "bounds_zyx": [
+      [
+        10016,
+        10784
+      ],
+      [
+        2816,
+        3584
+      ],
+      [
+        3712,
+        4480
+      ]
+    ],
+    "chunks": 125,
+    "absent_chunks_using_zarr_fill": [],
+    "compressed_bytes": 38234217,
+    "shape": [
+      768,
+      768,
+      768
+    ],
+    "array_sha256": "297d69e362ac940685134e6e4d895debd6ee7480390b846b579391a311846465"
+  }
+}

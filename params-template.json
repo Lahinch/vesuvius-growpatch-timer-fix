@@ -1,0 +1,16 @@
+{
+  "generations": 24,
+  "step_size": 20.0,
+  "min_area_cm": 0.0,
+  "voxelsize": 9.362,
+  "use_cuda": false,
+  "thread_limit": 2,
+  "cache_size": 536870912,
+  "x_min": 32,
+  "x_max": 735,
+  "y_min": 32,
+  "y_max": 735,
+  "z_min": 32,
+  "z_max": 735,
+  "normal_grid_path": "SET_TO_LOCAL_NORMAL_GRIDS_DIRECTORY"
+}

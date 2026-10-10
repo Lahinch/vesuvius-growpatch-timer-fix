@@ -1,0 +1,28 @@
+{
+  "kind": "ome-zarr",
+  "level": 0,
+  "url": "https://vesuvius-challenge-open-data.s3.us-east-1.amazonaws.com/PHerc0125/volumes/20250821151825-9.362um-1.2m-113keV-masked.zarr/0/",
+  "bounds_zyx": [
+    [
+      10016,
+      10784
+    ],
+    [
+      2816,
+      3584
+    ],
+    [
+      3712,
+      4480
+    ]
+  ],
+  "chunks": 252,
+  "absent_chunks_using_zarr_fill": [],
+  "compressed_bytes": 528482304,
+  "shape": [
+    768,
+    768,
+    768
+  ],
+  "array_sha256": "375800325dd0bccebe1bd453651010d9b1b4e668ee8f4ded147d5d252be425b4"
+}

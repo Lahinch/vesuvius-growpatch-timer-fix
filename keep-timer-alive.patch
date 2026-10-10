@@ -1,0 +1,16 @@
+diff --git a/volume-cartographer/core/src/GrowPatch.cpp b/volume-cartographer/core/src/GrowPatch.cpp
+index 51e3df1..68c0d16 100644
+--- a/volume-cartographer/core/src/GrowPatch.cpp
++++ b/volume-cartographer/core/src/GrowPatch.cpp
+@@ -5032,9 +5032,10 @@ QuadSurface *tracer(Volume& volume, float scale, int level, cv::Vec3f origin, co
+         }
+ 
+     }  // end while fringe is non-empty
+-    delete timer;
+ 
++    // The snapshot lambda reads the timer; keep it alive through finalization.
+     QuadSurface* surf = create_surface_from_state();
++    delete timer;
+ 
+     const double area_est_vx2 = vc::surface::computeSurfaceAreaVox2(*surf);
+     const auto area_est_cm2 = vc::surface::areaCm2FromVox2(

@@ -1,0 +1,92 @@
+{
+  "date": "2026-10-10T12:40:28.440798+00:00",
+  "contribution": "Keep the GrowPatch timer alive until final surface metadata has been read",
+  "original_fix_candidate": true,
+  "novelty": "Present on checked main revision; no matching issue/PR located in targeted searches. This does not prove absolute novelty.",
+  "tested_app_commit": "fb8c2c4c2705746eefb42e9bb359560906f391e2",
+  "checked_main_commit": "a329895ea5e9bde78752e60dbc0a4878dd2ab909",
+  "patch_sha256": "afa5613a417aaa1625772b36f39a87b67192a3d160d8d6e78b1cea97082f1d18",
+  "cause": {
+    "allocation_line": 3601,
+    "capture_line": 3807,
+    "read_line": 3884,
+    "premature_delete_line": 5035
+  },
+  "before": {
+    "passed": false,
+    "tracer_exit": 0,
+    "elapsed_time_s": 230554.989105416,
+    "wall_seconds": 3.3941325
+  },
+  "after": {
+    "passed": true,
+    "tracer_exit": 0,
+    "elapsed_time_s": 3.695402417,
+    "wall_seconds": 4.1542555420000005,
+    "expected_library_loaded": true
+  },
+  "additional_successful_runs": [
+    {
+      "variant": "patched",
+      "seed_y": 310,
+      "exit_code": 0,
+      "wall_seconds": 4.721265916999999,
+      "elapsed_time_s": 3.944326667
+    },
+    {
+      "variant": "patched",
+      "seed_y": 310,
+      "exit_code": 0,
+      "wall_seconds": 3.9553710410000003,
+      "elapsed_time_s": 3.632898875
+    },
+    {
+      "variant": "patched",
+      "seed_y": 310,
+      "exit_code": 0,
+      "wall_seconds": 4.023730916000001,
+      "elapsed_time_s": 3.679944625
+    },
+    {
+      "variant": "patched",
+      "seed_y": 204,
+      "exit_code": 0,
+      "wall_seconds": 6.5908215000000006,
+      "elapsed_time_s": 6.364695333
+    },
+    {
+      "variant": "patched",
+      "seed_y": 407,
+      "exit_code": 0,
+      "wall_seconds": 10.281307542,
+      "elapsed_time_s": 9.948627458
+    }
+  ],
+  "geometry_check": {
+    "baseline-deterministic vs baseline-repeat": {
+      "identical_geometry": false,
+      "valid_mask_equal": true,
+      "valid_vertices": 675,
+      "mean_distance_vox": 0.7358951914411419,
+      "max_distance_vox": 4.392139443546319,
+      "generations_equal": true
+    },
+    "baseline-deterministic vs patched-deterministic": {
+      "identical_geometry": false,
+      "valid_mask_equal": true,
+      "valid_vertices": 675,
+      "mean_distance_vox": 0.7192744591650451,
+      "max_distance_vox": 2.7153184196629705,
+      "generations_equal": true
+    }
+  },
+  "limitations": [
+    "Targeted tracer-library build against the official app dependencies, not a full monorepo build.",
+    "Mac arm64 only; Linux and other Macs untested.",
+    "Current-main patch applies cleanly but full main was not built.",
+    "No new visual or historical letter recovered.",
+    "No performance speedup claim; this repairs timer lifetime and corrupted metadata.",
+    "No public submission made.",
+    "Two Qt viewer patches are separate prior work credited to their authors."
+  ]
+}

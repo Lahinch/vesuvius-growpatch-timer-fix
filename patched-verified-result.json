@@ -1,0 +1,34 @@
+{
+  "expected_library_loaded": true,
+  "passed": true,
+  "tracer_exit": 0,
+  "elapsed_time_s": 3.695402417,
+  "wall_seconds": 4.1542555420000005,
+  "allowed_clock_margin_seconds": 1,
+  "command": [
+    "<WORKSPACE>/work/scroll-research/timer-fix/native-trial/Contents/MacOS/vc_grow_seg_from_seed",
+    "-v",
+    "<WORKSPACE>/work/scroll-research/unread-trial/surface-crop.zarr",
+    "-t",
+    "<WORKSPACE>/work/scroll-research/timer-fix/native-results/check-patched-verified/surface",
+    "-p",
+    "<WORKSPACE>/work/scroll-research/timer-fix/native-results/check-patched-verified/params.json",
+    "-s",
+    "384",
+    "310",
+    "384",
+    "--segment-name",
+    "timer-real-scroll-check"
+  ],
+  "seed_xyz": [
+    384,
+    310,
+    384
+  ],
+  "rng_seed": 0,
+  "checks": [
+    "native exit status",
+    "finite nonnegative elapsed metadata within process wall time + 1 second",
+    "no AddressSanitizer error in log"
+  ]
+}

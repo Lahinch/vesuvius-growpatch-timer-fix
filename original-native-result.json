@@ -1,0 +1,33 @@
+{
+  "passed": false,
+  "tracer_exit": 0,
+  "elapsed_time_s": 230554.989105416,
+  "wall_seconds": 3.3941325,
+  "allowed_clock_margin_seconds": 1,
+  "command": [
+    "<WORKSPACE>/work/scroll-research/vc3d-portable/VC3D.app/Contents/MacOS/vc_grow_seg_from_seed",
+    "-v",
+    "<WORKSPACE>/work/scroll-research/unread-trial/surface-crop.zarr",
+    "-t",
+    "<WORKSPACE>/work/scroll-research/timer-fix/native-results/check-original/surface",
+    "-p",
+    "<WORKSPACE>/work/scroll-research/timer-fix/native-results/check-original/params.json",
+    "-s",
+    "384",
+    "310",
+    "384",
+    "--segment-name",
+    "timer-real-scroll-check"
+  ],
+  "seed_xyz": [
+    384,
+    310,
+    384
+  ],
+  "rng_seed": 0,
+  "checks": [
+    "native exit status",
+    "finite nonnegative elapsed metadata within process wall time + 1 second",
+    "no AddressSanitizer error in log"
+  ]
+}
